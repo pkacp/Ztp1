@@ -12,6 +12,7 @@ public class Client {
     /**
      * Main function expecting to get filename as first argument
      * and string pattern as second
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -32,6 +33,7 @@ public class Client {
 
     /**
      * Function calling Levenshtein algorithm for file with given name
+     *
      * @param fileName
      * @param pattern
      * @return

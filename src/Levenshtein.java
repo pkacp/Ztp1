@@ -9,6 +9,7 @@ public class Levenshtein {
 
     /**
      * Constructor setting pattern as character array
+     *
      * @param pattern
      */
     public Levenshtein(String pattern) {
@@ -17,6 +18,7 @@ public class Levenshtein {
 
     /**
      * Function comparing passed String with pattern
+     *
      * @param expressionString
      * @return
      */
@@ -27,6 +29,7 @@ public class Levenshtein {
 
     /**
      * Levenshtein distance algorithm implementation
+     *
      * @param expression
      * @return
      */
@@ -47,6 +50,7 @@ public class Levenshtein {
     /**
      * Matrix initialization for algorithm
      * and setting firs col and row proper values
+     *
      * @param matrixRows
      * @param matrixCols
      * @return
@@ -60,16 +64,18 @@ public class Levenshtein {
 
     /**
      * Cost calculation 1 if values are different
+     *
      * @param a
      * @param b
      * @return
      */
-    private int calculateCost(int a, int b){
+    private int calculateCost(char a, char b) {
         return a == b ? 0 : 1;
     }
 
     /**
      * Picking minimum from three numbers
+     *
      * @param a
      * @param b
      * @param c
